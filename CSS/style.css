@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind", sans-serif;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  padding: 2rem 0;
+}
+
+nav {
+  align-items: center;
+}
+
+.navbar-brand i {
+  color: #35a22c;
+  margin-right: 5px;
+}
+
+.navbar-brand span {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.navbar-nav li a {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+  transition: all 0.5s;
+  color: white;
+}
+
+.navbar-nav li.active a {
+  color: #35a22c;
+}
+
+.navbar-nav li {
+  margin-right: 3rem;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #35a22c;
+  display: block;
+  transition: all 0.5s;
+}
+
+.navbar-nav .nav-item:hover a {
+  color: #35a22c;
+}
+
+.navbar-nav .nav-item .nav-link:hover:after,
+.navbar-nav .active .nav-link::after {
+  width: 100%;
+}
+
+/* CAROUSEL  */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+  height: 100vh;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.carousel-inner .carousel-item:nth-child(1) {
+  background-image: url("./../Images/finland.jpg");
+}
+
+.carousel-inner .carousel-item:nth-child(2) {
+  background-image: url("./../Images/mountains.jpg");
+}
+
+.carousel-inner .carousel-item:nth-child(3) {
+  background-image: url("./../Images/mountains-1.jpg");
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(39, 43, 54, 0.4);
+}
+
+.carousel-inner .overlay h1 {
+  padding-top: 10px;
+  font-size: 4.6rem;
+}
+
+.carousel-inner .overlay p {
+  font-size: 2rem;
+}
+
+.carousel-caption {
+  text-align: center;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.overlay__img {
+  width: 140px;
+}
+
+.overlay__img img {
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-indicators {
+  bottom: 60px;
+}
+
+.carousel-indicators li {
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+}
+
+.carousel-indicators li.active {
+  background-color: #35a22c;
+}
+
+/* PROJECTS  */
+#project {
+  margin-top: 5rem;
+}
+
+.project__heading {
+  max-width: 750px;
+}
+
+#project h1 {
+  font-weight: 900;
+}
+
+.nav-pills .nav-link {
+  color: #1a1d2d;
+  border: 1px solid #1a1d2d;
+  margin: 0 5px;
+  padding: 10px 15px;
+}
+
+.nav-pills .nav-item .nav-link {
+  font-size: 1.5rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #35a22c;
+  border: none;
+}
+
+.tab-content .card {
+  box-shadow: 0 0 0.4rem rgb(0 0 0 / 20%);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card-body {
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+
+.card-body .card-title a {
+  font-size: 22px;
+  color: black;
+}
+
+.card:hover a {
+  color: #35a22c;
+  text-decoration: none;
+}
+
+.card:hover {
+  border: solid 1px #35a22c;
+}
+
+p.card-text {
+  color: #585858;
+}
+
+/* FEATURES  */
+#feature {
+  background-image: url("./../Images/3.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#feature .overlay {
+  background-color: rgba(7, 10, 12, 0.72);
+}
+
+.feature__container {
+  padding: 8rem 0;
+}
+
+.feature__heading {
+  max-width: 750px;
+  position: relative;
+}
+
+.features {
+  margin-top: 40px;
+}
+
+.feature__item {
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;
+  color: white;
+}
+
+.feature__item:hover {
+  border: solid 1px white;
+  background-color: black;
+}
+
+.feature__icon i {
+  color: #35a22c;
+}
+
+.feature__txt h4 {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 25px;
+  font-weight: 800;
+}
+
+.feature__txt p {
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ACHIEVEMENT */
+#achievement {
+  position: relative;
+  padding: 45px 0;
+}
+
+.bg-img {
+  background-image: url("./../Images/memphis_3.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.achievement__card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+  padding: 45px;
+}
+
+.achievement__card h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #1a1d2d;
+  font-weight: 600;
+}
+
+.achievement__card p {
+  color: #585858;
+  line-height: 24px;
+}
+
+.achievement__brand .col {
+  width: 20%;
+}
+
+.achievement__brand .col img {
+  width: 100%;
+}
+
+/* FOOTER  */
+footer {
+  background-color: #222;
+}
+
+.footer__container {
+  padding: 50px 0;
+}
+
+.footer__social {
+  margin: 2rem 0;
+}
+
+.footer__social ul li {
+  display: inline;
+}
+
+.footer__social ul li {
+  margin-right: 10px;
+}
+
+.footer__social ul li a i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+  color: #aaaaaa;
+  font-size: 1.5rem;
+}
+
+.footer__social ul li:hover i {
+  color: #35a22c;
+  border: 1px solid #35a22c;
+}
+
+.footer__copyright p a {
+  font-size: inherit;
+  color: inherit;
+}
+
+.footer__copyright p a:hover {
+  color: #35a22c;
+  text-decoration: none;
+}
+
+hr {
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.footer__copyright {
+  margin: 2rem 0;
+}
+
+.footer__copyright p {
+  color: #aaa;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0.5rem 0;
+  }
+
+  .navbar-toggler {
+    outline: none;
+    z-index: 99;
+  }
+
+  .navbar-toggler:visited,
+  .navbar-toggler:hover {
+    outline: none;
+    text-decoration: none;
+  }
+
+  .navbar-toggler-icon i {
+    padding: 10px 15px;
+    font-size: 24px;
+    background-color: #35a22c;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+  }
+
+  .navbar-collapse .nav-item {
+    margin: 0;
+    transition: all 0.5s;
+  }
+
+  .navbar-collapse a {
+    color: #35a22c !important;
+    padding: 10px !important;
+  }
+
+  .navbar-collapse a.nav-link::after {
+    display: none !important;
+  }
+
+  .navbar-collapse .nav-item:hover {
+    background-color: #35a22c;
+    color: white;
+  }
+
+  .navbar-collapse .nav-item:hover a {
+    color: white !important;
+  }
+
+  .carousel-inner .overlay h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-height: 415px) {
+  .carousel-inner .overlay {
+    padding-top: 400px;
+  }
+
+  .overlay__img {
+    max-width: 80px;
+    margin-top: 0;
+  }
+
+  .carousel-inner .overlay h1 {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+
+  .carousel-inner .overlay p {
+    font-size: 3vw;
+  }
+
+  .carousel-indicators {
+    bottom: 0;
+  }
+
+  #achievement .container {
+    max-width: 100vw;
+  }
+
+  .achievement__card {
+    margin-bottom: 2rem;
+  }
+
+  .feature__item {
+    padding: 30px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    .projects__content .nav .nav-link {
+        padding: 0.5rem;
+    }
+    
+}
